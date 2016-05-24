@@ -58,8 +58,7 @@ declare namespace ChaiPromised {
         members: PromisedMembers;
     }
 
-    interface PromisedAssertion extends Eventually, Promise<any> {
-    }
+    type PromisedAssertion = Eventually & Promise<any>
 
     interface PromisedLanguageChains {
         eventually: Eventually;
